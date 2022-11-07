@@ -57,7 +57,6 @@ const App = () => {
       
       setOrder(incomingOrder);
       refreshCart();
-      console.log('hi');
     } catch (error) {
       setErrorMessage(error.data.error.message);
     }
