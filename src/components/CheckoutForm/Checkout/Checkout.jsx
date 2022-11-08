@@ -21,9 +21,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
             const token = await commerce.checkout.generateToken(cart.id, { type: 'cart' });
 
             setCheckoutToken(token);
-            console.log(token);
         } catch (error){
-            console.log(error);
              if (activeStep !== steps.lengh) history('/');
         }
     };
